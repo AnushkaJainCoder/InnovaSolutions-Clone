@@ -54,3 +54,28 @@ nav .fa-search {
   font-size: 20px;
   cursor: pointer;
 }
+
+/* Headers.css */
+.header-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.header-text {
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+}
+
+.posterimage {
+  background-size: 'cover';
+  /* ba */
+  background-position: 'center';
+  height: '200px';
+  display: 'flex';
+  align-items: 'center';
+  justify-content: 'center';
+  color: 'white'
+}
