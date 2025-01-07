@@ -29,6 +29,7 @@ export function Navbar() {
                     <li>
                         Contact us
                     </li>
+                    <li>|</li>
                     <i className="fas fa-search" />
                 </ul>
                 {/* search icon */}
