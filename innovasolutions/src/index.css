@@ -13,7 +13,8 @@ body {
 } */
 
 /* Navbar.css */
-navbar {
+/* Navbar.css */
+nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -21,26 +22,33 @@ navbar {
   padding: 10px;
 }
 
-navbar img {
+nav img {
   height: 40px;
 }
 
-navbar ul {
+nav ul {
   list-style-type: none;
   display: flex;
   margin: 0;
   padding: 0;
 }
 
-navbar ul li {
+nav ul li {
   margin: 0 10px;
 }
 
-navbar ul li a {
+nav ul li a {
   color: white;
   text-decoration: none;
 }
 
-navbar ul li a:hover {
+nav ul li a:hover {
   text-decoration: underline;
+  color: #ffcc00;
+}
+
+nav .fa-search {
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
 }

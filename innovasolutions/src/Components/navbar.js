@@ -1,9 +1,10 @@
 import '../index';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 export function Navbar() {
     return (
         <>
-            <navbar>
+            <nav>
                 {/* company logo */}
                 <img src="" />
                 <ul>
@@ -28,10 +29,13 @@ export function Navbar() {
                     <li>
                         Contact us
                     </li>
+                    <i className="fas fa-search" />
                 </ul>
                 {/* search icon */}
-                <img src="" />
-            </navbar>
+                {/* <p>hello</p> */}
+               
+
+            </nav>
 
         </>
     )
