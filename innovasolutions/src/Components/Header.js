@@ -7,13 +7,18 @@ export function Header() {
             text: 'Innova Orion Empowering Global Capability Centers with tailored & versatile solutions, leveraging our adaptable assets for unparalleled growth, innovation and success, while driving enterprise value'
         },
         {
-            imgLink: '',
+            imgLink: 'https://media.licdn.com/dms/image/v2/C4D12AQHONeaXTrl3GQ/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1650366012252?e=2147483647&v=beta&t=R0WWCVafRBe0ZcFjSSNuzKPw6zc6jf9UzfLCT663hVg',
             text: 'Innovative Core Engineering for Product edge development'
         },
         {
-            imgLink: '',
+            imgLink: 'https://www.sigmoid.com/wp-content/uploads/2024/12/Group-31130-1-1024x501.png',
             text: 'Innovative Core Engineering for Product edge development'
         },
+        {
+            imgLink: 'https://i0.wp.com/keepler.io/wp-content/uploads/2023/10/keepler-data-tech-aws-cloud-solutions-1.jpg?resize=1080%2C608&ssl=1',
+            text: 'Innovative Core Engineering for Product edge development'
+        },
+        
     ]
     return (
         <div className='contentbody'>

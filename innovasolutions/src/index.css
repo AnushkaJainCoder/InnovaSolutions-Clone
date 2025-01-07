@@ -74,13 +74,16 @@ nav .fa-search {
 }
 /* index.css or Headers.css */
 .contentbody {
+  width: 100vw;
   display: flex;
-  flex-direction: column;
+  overflow-x: auto;
+  
 }
 
 .posterimage {
+  flex-shrink: 0;
   width: 100vw;
-  height: 500px; /* Adjust the height as needed */
+  height: 600px; /* Adjust the height as needed */
   background-size: cover;
   background-position: center;
   display: flex;
@@ -92,7 +95,8 @@ nav .fa-search {
 }
 
 .headerText{
-  width: 40%;
+  width: 30%;
+  /* height: 20%; */
   /* background-color: red; */
   text-align: left;
   margin-left: 7%;
