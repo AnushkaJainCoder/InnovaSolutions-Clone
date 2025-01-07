@@ -6,7 +6,7 @@ export function Navbar() {
         <>
             <nav>
                 {/* company logo */}
-                <img src="" />
+                <img src="https://www.innovasolutions.com/wp-content/uploads/2025/01/Innova-Logo-New.svg" />
                 <ul>
                     <li>
                         Services
@@ -29,7 +29,7 @@ export function Navbar() {
                     <li>
                         Contact us
                     </li>
-                    <li>|</li>
+                    <li style={{color: 'grey'}}>|</li>
                     <i className="fas fa-search" />
                 </ul>
                 {/* search icon */}

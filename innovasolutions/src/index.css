@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -18,14 +19,15 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #333;
   padding: 10px;
-  /* padd */
-  padding-right: 50px;
+ 
+  padding: 20px ;
+  padding-right: 90px;
 }
 
 nav img {
-  height: 40px;
+  height: 60px;
+  margin-left: 40px;
 }
 
 nav ul {
@@ -36,21 +38,23 @@ nav ul {
 }
 
 nav ul li {
-  margin: 0 10px;
+  margin: 0 20px;
 }
 
 nav ul li {
-  color: white;
+  color: #333;
+  font-weight: 600;
   text-decoration: none;
+  cursor: pointer;
 }
 
-nav ul li a:hover {
-  text-decoration: underline;
-  color: #ffcc00;
+nav ul li:hover {
+  /* text-decoration: underline; */
+  color: rgb(79, 128, 213);
 }
 
 nav .fa-search {
-  color: white;
+  color: rgb(79, 128, 213);
   font-size: 20px;
   cursor: pointer;
 }
@@ -68,14 +72,31 @@ nav .fa-search {
   font-size: 18px;
   color: #333;
 }
+/* index.css or Headers.css */
+.contentbody {
+  display: flex;
+  flex-direction: column;
+}
 
 .posterimage {
-  background-size: 'cover';
-  /* ba */
-  background-position: 'center';
-  height: '200px';
-  display: 'flex';
-  align-items: 'center';
-  justify-content: 'center';
-  color: 'white'
+  width: 100vw;
+  height: 500px; /* Adjust the height as needed */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: white;
+  font-size: 24px; /* Adjust the font size as needed */
+  text-align: center;
 }
+
+.headerText{
+  width: 40%;
+  /* background-color: red; */
+  text-align: left;
+  margin-left: 7%;
+  font-weight: 500;
+
+}
+
