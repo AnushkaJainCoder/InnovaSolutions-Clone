@@ -20,7 +20,7 @@ export function Header() {
             text: 'Accelerating Client success through Digital Innovation.'
         },
         {
-            imgLink: 'https://www.ruffalonl.com/wp-content/uploads/2022/03/CWarren_DigitalWallet_1200.jpg',
+            imgLink: 'https://emudhra.com/hubfs/Imported_Blog_Media/oSGj4CnyRgaLOGZHfzLc.webp',
             text: 'A digital first-payment platform Inno-Wallet'
         },
         

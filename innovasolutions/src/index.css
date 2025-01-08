@@ -181,6 +181,7 @@ nav .fa-search {
   color: white;
   text-align: left;
   font-size: 18px;
+  /* font-weight: 500; */
  
 }
 button{
@@ -191,4 +192,40 @@ button{
   border-radius: 10px;
   align-items: left;
   margin-left: 100%;
+  font-weight: bold;
+}
+b{
+  color: #d8168a;
+}
+.body-three{
+  font-size: 15px;
+  display: flex;
+  padding: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+  gap: 3%;
+  /* background-color: pink; */
+  
+  
+  /* width: 10px; */
+}
+.box {
+  position: relative; /* Position relative for absolute positioning of pseudo-elements */
+  width: auto;
+  height: auto;
+  text-align: center;
+  padding: 2%;
+  margin: 5px; /* Optional: Add some margin for spacing */
+  
+  /* Rounded corners */
+  /* border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px; */
+
+  /* Border styles */
+  border: 1px solid orange; /* Set a transparent border to maintain layout */
+}
+
+.box:hover{
+  border: 1px solid #8282d5;
 }
