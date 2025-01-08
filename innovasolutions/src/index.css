@@ -160,3 +160,35 @@ nav .fa-search {
   color: rgb(111, 111, 111);
   font-size: 28px;
 }
+.bodyTwo{
+  background-image: url('https://www.innovasolutions.com/wp-content/uploads/2024/12/constantly-challenging-bg.jpg');
+  height: 30vh;
+  width: 100vw;
+  /* align-items: left; */
+  justify-items: left;
+  /* background-position: right; */
+  background-size:cover;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  /* mar */
+ 
+  
+}
+.data{
+  /* padding-top: 5% ; */
+  padding-left: 10%;
+  width: 50%;
+  color: white;
+  text-align: left;
+  font-size: 18px;
+ 
+}
+button{
+  background-color: black;
+  width: 100%;
+  color: yellow;
+  padding: 10px;
+  border-radius: 10px;
+  align-items: left;
+  margin-left: 100%;
+}

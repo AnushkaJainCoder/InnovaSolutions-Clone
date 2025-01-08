@@ -3,6 +3,7 @@ import './App.css';
 import { Navbar } from './Components/navbar';
 import { Header } from './Components/Header';
 import { BodyOne } from './Components/BodyOne';
+import { BodyTwo } from './Components/BodyTwo';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Navbar />
       <Header />
       <BodyOne />
+      <BodyTwo />
     </div>
   );
 }
