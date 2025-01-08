@@ -71,16 +71,23 @@ nav .fa-search {
   text-align: center;
   font-size: 18px;
   color: #333;
+  transform: rotate(180deg);
+  /* Upside down text */
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  /* Transition for opacity and transform */
 }
 
 /* index.css or Headers.css */
 .contentbody {
   width: 100vw;
-  display: flex;
-  overflow-x: auto;
-  scroll-behavior: smooth;
+  height: 600px;
+  /* display: flex; */
+  /* overflow-x: auto; */
+  /* scroll-behavior: smooth;
   -ms-overflow-style: none;
-  scrollbar-width: none;
+  scrollbar-width: none; */
+  position: relative;
+  overflow: hidden;
 }
 
 .posterimage {
@@ -96,7 +103,14 @@ nav .fa-search {
   color: white;
   font-size: 24px;
   /* Adjust the font size as needed */
+  position: absolute;
   text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.posterimage.active{
+  opacity: 1;
 }
 
 .headerText {

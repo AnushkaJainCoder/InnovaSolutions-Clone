@@ -1,9 +1,11 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import '../index'
 
 export function Header() {
 
-    const srcollref = useRef(null);
+    // for scrolling
+    // const srcollref = useRef(null);
+    const [currentIndex, setCurrentIndex] = useState(0);
     const imageContent = [
         {
             imgLink: 'https://t3.ftcdn.net/jpg/05/14/95/12/360_F_514951224_2dxMLbIw5qNRdPGD003chpbVcxWtcp7K.jpg',
@@ -25,22 +27,29 @@ export function Header() {
     ]
 
     useEffect(()=>{
-       setInterval(()=>{
-            if(srcollref.current){
-                srcollref.current.scrollBy({
-                    left: window.innerWidth,
-                    behavior: 'smooth'
-                })
-            }
+        const interval = setInterval(()=>{
+            setCurrentIndex((prev) => (prev + 1) % imageContent.length)
         }, 3000);
+
+        return () => clearInterval(interval);
+        
+
+    //    setInterval(()=>{
+    //         if(srcollref.current){
+    //             srcollref.current.scrollBy({
+    //                 left: window.innerWidth,
+    //                 behavior: 'smooth'
+    //             })
+    //         }
+    //     }, 3000);
         // return () => clearInterval(scrollInterval);
     },[])
     return (
-        <div className='contentbody' ref={srcollref}>
+        <div className='contentbody' >
             {/* <img src="" /> */}
             {imageContent.map((i, index) => (
                 <div key={index}>
-                    <div className='posterimage' style={{ backgroundImage: `url(${i.imgLink})` }}>
+                    <div className={`posterimage ${currentIndex === index ? 'active' : ''}`} style={{ backgroundImage: `url(${i.imgLink})` }}>
                         <p className='headerText'>{i.text}</p>
                     </div>
                 </div>
