@@ -80,7 +80,7 @@ nav .fa-search {
 /* index.css or Headers.css */
 .contentbody {
   width: 100vw;
-  height: 600px;
+  height: 620px;
   /* display: flex; */
   /* overflow-x: auto; */
   /* scroll-behavior: smooth;
@@ -93,7 +93,7 @@ nav .fa-search {
 .posterimage {
   flex-shrink: 0;
   width: 100vw;
-  height: 600px;
+  height: 620px;
   /* Adjust the height as needed */
   background-size: cover;
   background-position: center;
@@ -120,5 +120,35 @@ nav .fa-search {
   text-align: left;
   margin-left: 7%;
   font-weight: 500;
+  transform: translateX(-50%);
+  transition: transform 1.2s ease-in-out, opacity 1.2s ease-in-out;
+}
+.headerText.slide-in{
+  transform: translateY(0);
+  opacity: 1;
+}
+.headerText.slide-out{
+  transform: translateY(100%);
+  opacity: 0;
+}
+.dots {
+  position: absolute; /* Position dots absolutely */
+  bottom: 20px; /* Position above the bottom */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+  display: flex; /* Use flexbox for alignment */
+}
 
+.dot {
+  height: 8px; /* Height of the dot */
+  width: 8px; /* Width of the dot */
+  margin: 0 5px; /* Space between dots */
+  background-color: #bbb; /* Default color for inactive dots */
+  border-radius: 50%; /* Make dots circular */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s; /* Smooth transition for color change */
+}
+
+.dot.active {
+  background-color: #717171; /* Color for the active dot */
 }

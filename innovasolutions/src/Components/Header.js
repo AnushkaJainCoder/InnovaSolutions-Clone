@@ -23,38 +23,45 @@ export function Header() {
             imgLink: 'https://i0.wp.com/keepler.io/wp-content/uploads/2023/10/keepler-data-tech-aws-cloud-solutions-1.jpg?resize=1080%2C608&ssl=1',
             text: 'Innovative Core Engineering for Product edge development'
         },
-        
+
     ]
 
-    useEffect(()=>{
-        const interval = setInterval(()=>{
+    useEffect(() => {
+        const interval = setInterval(() => {
             setCurrentIndex((prev) => (prev + 1) % imageContent.length)
         }, 3000);
 
         return () => clearInterval(interval);
-        
 
-    //    setInterval(()=>{
-    //         if(srcollref.current){
-    //             srcollref.current.scrollBy({
-    //                 left: window.innerWidth,
-    //                 behavior: 'smooth'
-    //             })
-    //         }
-    //     }, 3000);
+
+        //    setInterval(()=>{
+        //         if(srcollref.current){
+        //             srcollref.current.scrollBy({
+        //                 left: window.innerWidth,
+        //                 behavior: 'smooth'
+        //             })
+        //         }
+        //     }, 3000);
         // return () => clearInterval(scrollInterval);
-    },[])
+    }, [])
     return (
         <div className='contentbody' >
             {/* <img src="" /> */}
             {imageContent.map((i, index) => (
                 <div key={index}>
                     <div className={`posterimage ${currentIndex === index ? 'active' : ''}`} style={{ backgroundImage: `url(${i.imgLink})` }}>
-                        <p className='headerText'>{i.text}</p>
+                        <p className={`headerText ${currentIndex === index ? 'slide-in' : 'slide-out'}`}>{i.text}</p>
                     </div>
                 </div>
             )
             )}
+            <div className='dots'>
+                {imageContent.map((_,index) =>(
+                    <span key={index} className={`dot ${currentIndex === index ? 'active': ''}`} onClick={() => setCurrentIndex(index)}>
+
+                    </span>
+                ))}
+            </div>
         </div>
     )
 }
