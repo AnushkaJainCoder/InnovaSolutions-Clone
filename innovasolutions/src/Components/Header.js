@@ -8,19 +8,24 @@ export function Header() {
     const [currentIndex, setCurrentIndex] = useState(0);
     const imageContent = [
         {
+            imgLink: 'https://www.sigmoid.com/wp-content/uploads/2024/12/Group-31130-1-1024x501.png',
+            text: 'We are Leaders in Talent and Technology Solutions.'
+        },
+        {
             imgLink: 'https://t3.ftcdn.net/jpg/05/14/95/12/360_F_514951224_2dxMLbIw5qNRdPGD003chpbVcxWtcp7K.jpg',
-            text: 'Innova Orion Empowering Global Capability Centers with tailored & versatile solutions, leveraging our adaptable assets for unparalleled growth, innovation and success, while driving enterprise value'
+            text: 'Innovative Core Engineerig Solutions for Leading Edge Product Developement & Process Optimization.',
         },
         {
             imgLink: 'https://media.licdn.com/dms/image/v2/C4D12AQHONeaXTrl3GQ/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1650366012252?e=2147483647&v=beta&t=R0WWCVafRBe0ZcFjSSNuzKPw6zc6jf9UzfLCT663hVg',
-            text: 'Innovative Core Engineering for Product edge development'
+            text: 'Accelerating Client success through Digital Innovation.'
         },
         {
-            imgLink: 'https://www.sigmoid.com/wp-content/uploads/2024/12/Group-31130-1-1024x501.png',
-            text: 'Innovative Core Engineering for Product edge development'
+            imgLink: 'https://www.ruffalonl.com/wp-content/uploads/2022/03/CWarren_DigitalWallet_1200.jpg',
+            text: 'A digital first-payment platform Inno-Wallet'
         },
+        
         {
-            imgLink: 'https://i0.wp.com/keepler.io/wp-content/uploads/2023/10/keepler-data-tech-aws-cloud-solutions-1.jpg?resize=1080%2C608&ssl=1',
+            imgLink: 'https://eu-images.contentstack.com/v3/assets/blt10e444bce2d36aa8/blt4ac01957d4312a1b/663d0509a040fddd8a864381/Generative_AI_Robot.jpg?width=1280&auto=webp&quality=95&format=jpg&disable=upscale',
             text: 'Innovative Core Engineering for Product edge development'
         },
 
