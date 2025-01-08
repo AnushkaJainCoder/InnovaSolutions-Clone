@@ -1,7 +1,10 @@
+import { useEffect, useRef } from 'react';
 import '../index'
 
 export function Header() {
-    let imageContent = [
+
+    const srcollref = useRef(null);
+    const imageContent = [
         {
             imgLink: 'https://t3.ftcdn.net/jpg/05/14/95/12/360_F_514951224_2dxMLbIw5qNRdPGD003chpbVcxWtcp7K.jpg',
             text: 'Innova Orion Empowering Global Capability Centers with tailored & versatile solutions, leveraging our adaptable assets for unparalleled growth, innovation and success, while driving enterprise value'
@@ -20,12 +23,23 @@ export function Header() {
         },
         
     ]
+
+    useEffect(()=>{
+       setInterval(()=>{
+            if(srcollref.current){
+                srcollref.current.scrollBy({
+                    left: window.innerWidth,
+                    behavior: 'smooth'
+                })
+            }
+        }, 3000);
+        // return () => clearInterval(scrollInterval);
+    },[])
     return (
-        <div className='contentbody'>
+        <div className='contentbody' ref={srcollref}>
             {/* <img src="" /> */}
             {imageContent.map((i, index) => (
                 <div key={index}>
-                    {/* //  <img src={i.imgLink} /> */}
                     <div className='posterimage' style={{ backgroundImage: `url(${i.imgLink})` }}>
                         <p className='headerText'>{i.text}</p>
                     </div>
