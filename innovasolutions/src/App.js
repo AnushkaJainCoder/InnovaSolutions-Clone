@@ -6,6 +6,7 @@ import { BodyOne } from './Components/BodyOne';
 import { BodyTwo } from './Components/BodyTwo';
 import { BodyThree } from './Components/BodyThree';
 import { BodyFour } from './Components/BodyFour';
+import { BodyFive } from './Components/BodyFive';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <BodyTwo />
       <BodyThree />
       <BodyFour />
+      <BodyFive />
       
     </div>
   );
