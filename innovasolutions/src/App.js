@@ -5,6 +5,7 @@ import { Header } from './Components/Header';
 import { BodyOne } from './Components/BodyOne';
 import { BodyTwo } from './Components/BodyTwo';
 import { BodyThree } from './Components/BodyThree';
+import { BodyFour } from './Components/BodyFour';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <BodyOne />
       <BodyTwo />
       <BodyThree />
+      <BodyFour />
       
     </div>
   );

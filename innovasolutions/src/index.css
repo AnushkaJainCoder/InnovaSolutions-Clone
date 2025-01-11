@@ -185,14 +185,17 @@ nav .fa-search {
  
 }
 button{
-  background-color: black;
+  background-color: yellow;
   width: 100%;
-  color: yellow;
+  color: rgb(39, 39, 87);
   padding: 10px;
-  border-radius: 10px;
+  font-weight: 700;
+  /* border-radius: 10px; */
+  border: none;
   align-items: left;
-  margin-left: 100%;
-  font-weight: bold;
+  margin-left: 70%;
+  font-size: large;
+  /* font-weight: bold; */
 }
 b{
   color: #d8168a;
@@ -200,6 +203,7 @@ b{
 .body-three{
   font-size: 15px;
   display: flex;
+  /* flex-direction: column; */
   padding: 5%;
   padding-left: 10%;
   padding-right: 10%;
@@ -229,3 +233,13 @@ b{
 .box:hover{
   border: 1px solid #8282d5;
 }
+
+.contenContainer{
+  display: flex;
+  padding-left: 10% ;
+  padding-right: 10% ;
+  width: 30%;
+  height: 60%;
+  
+}
+
