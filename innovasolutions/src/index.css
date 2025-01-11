@@ -1,6 +1,9 @@
+
+
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -92,7 +95,7 @@ nav .fa-search {
 
 .posterimage {
   flex-shrink: 0;
-  width: 100vw;
+  width: 100%;
   height: 620px;
   /* Adjust the height as needed */
   background-size: cover;
@@ -163,7 +166,7 @@ nav .fa-search {
 .bodyTwo{
   background-image: url('https://www.innovasolutions.com/wp-content/uploads/2024/12/constantly-challenging-bg.jpg');
   height: 30vh;
-  width: 100vw;
+  width: 100%;
   /* align-items: left; */
   justify-items: left;
   /* background-position: right; */
@@ -204,7 +207,8 @@ b{
   font-size: 15px;
   display: flex;
   /* flex-direction: column; */
-  padding: 5%;
+  padding-top: 5%;
+  padding-bottom: 4%;
   padding-left: 10%;
   padding-right: 10%;
   gap: 3%;
@@ -236,10 +240,24 @@ b{
 
 .contenContainer{
   display: flex;
-  padding-left: 10% ;
-  padding-right: 10% ;
-  width: 30%;
+  padding-left: 12% ;
+  /* padding-right: 10% ; */
+  width: 90%;
   height: 60%;
+  flex-wrap: wrap;
+  /* gap: 20%; */
+  /* margin-top: 3%; */
+  background-color: rgb(240, 238, 238);
+  padding-top: 3%;
+  padding-bottom: 3%;
   
 }
+.cont{
+  width: 30%;
+  height: 100%;
+  /* background-color: red; */
+}
 
+h2{
+  color: rgb(39, 39, 87);
+}
