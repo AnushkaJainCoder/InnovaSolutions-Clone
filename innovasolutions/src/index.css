@@ -261,14 +261,14 @@ b{
 h2{
   color: rgb(39, 39, 87);
 }
-.sercontainer{
+/* .sercontainer{
   width: 100%;
   height: 70%;
   display: flex;
   gap: 0;
   /* padding: 20%; */
 
-}
+/* }
 .card{
   display: flex;
   flex-direction: column;
@@ -278,4 +278,57 @@ h2{
 .card-body{
   width: 40%;
   color: rgb(104, 102, 102);
+} */ 
+.sercontainer {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  gap: 0;
+  position: relative;
+   /* Make the container relative for absolute positioning */
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  /* overflow-x:; */
+  flex-wrap: nowrap;
+  /* margin-right: 10%; */
+  /* align-items: center; */
+  /* position: absolute;  */
+  /* osition cards absolutely */
+  transition: transform 0.3s ease; /* Smooth transition for transform */
+  cursor: pointer;
+  
+  /* background-color: rgb(240, 238, 238); */
+}
+
+.card img {
+  transition: transform 0.3s ease; /* Smooth transition for image */
+}
+
+.card-body {
+  width: 100%;
+  color: rgb(104, 102, 102);
+  text-align: center;
+  margin: 0;
+  
+  /* margin-right: -10%; */
+  /* margin-left: -10%; */
+}
+
+.card.active {
+  transform: scale(1.1); /* Scale up the active card */
+  z-index: 1; /* Bring the active card to the front */
+}
+
+.card-body p {
+  display: none; /* Hide description by default */
+}
+
+.card.active .card-body p {
+  display: block; /* Show description when card is active */
+}
+.card.not-active{
+  
 }
