@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 export function BodyFive() {
-    const [activeCard, setActiveCard] = useState(null);
+    const [activeCard, setActiveCard] = useState(1);
 
     const handleCardClick = (index) => {
         setActiveCard(activeCard === index ? null : index); // Toggle active card
@@ -23,11 +23,11 @@ export function BodyFive() {
             description: "Leverage cloud technology to enhance your business operations and scalability.",
             imgSrc: "https://www.innovasolutions.com/wp-content/uploads/2022/08/Talent-Solutions-copy.webp"
         },
-        {
-            title: "Cloud Services",
-            description: "Leverage cloud technology to enhance your business operations and scalability.",
-            imgSrc: "https://www.innovasolutions.com/wp-content/uploads/2022/08/Talent-Solutions-copy.webp"
-        }
+        // {
+        //     title: "Cloud Services",
+        //     description: "Leverage cloud technology to enhance your business operations and scalability.",
+        //     imgSrc: "https://www.innovasolutions.com/wp-content/uploads/2022/08/Talent-Solutions-copy.webp"
+        // }
         
     ];
 
