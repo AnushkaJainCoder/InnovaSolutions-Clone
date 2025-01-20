@@ -15,8 +15,8 @@ export function BodyFive() {
         },
         {
             title: "Cloud Services",
-            description: "Leverage cloud technology to enhance your business operations and scalability.",
-            imgSrc: "https://www.innovasolutions.com/wp-content/uploads/2022/08/Talent-Solutions-copy.webp"
+            description: "Innova’s custom cloud services drive innovation, agility, and intelligence across enterprises helping them realize significant business value.",
+            imgSrc: "https://www.innovasolutions.com/wp-content/uploads/2024/12/Cloud-services-info.jpg"
         },
         {
             title: "Cloud Services",
@@ -46,10 +46,10 @@ export function BodyFive() {
                        <img style={{ width: '100%' }} src={card.imgSrc} alt={card.title} />
                         
                             <h3 className='servicesSubHeading'>{card.title}</h3>
-                            <p style={{fontSize: '14px'}}>
+                            <p style={{fontSize: '14px', paddingLeft: '30px', paddingRight: '30px'}}>
                                 {card.description}
                             </p>
-                            <a href="#" style={{ border: 'none'}}>Learn More</a>
+                            <a href="#" style={{ border: 'none', color: '#212169', fontWeight: '700', textDecoration: 'none'}}>Learn More &gt;</a>
                         </div>
                     </div>
                 ))}

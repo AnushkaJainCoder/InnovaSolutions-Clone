@@ -284,6 +284,7 @@ h2, .servicesSubHeading{
   color: rgb(104, 102, 102);
 } */ 
 .sercontainer {
+  margin-top: 4%;
   width: 80%;
   height: 90%;
   display: flex;
@@ -311,8 +312,9 @@ h2, .servicesSubHeading{
   /* osition cards absolutely */
   transition: transform 0.3s ease,opacity 0.3s ease; /* Smooth transition for transform */
   cursor: pointer;
+  border: 0.2px solid rgb(194, 193, 193);
   
-  background-color: rgb(240, 238, 238);
+  background-color: rgb(255, 251, 251);
   opacity: 0.5;
 }
 
@@ -356,3 +358,4 @@ h2, .servicesSubHeading{
   width: 40%;
   height: 100%;
 }
+
