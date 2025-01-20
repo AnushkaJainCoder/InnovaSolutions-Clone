@@ -4,7 +4,7 @@ export function BodyFive() {
     const [activeCard, setActiveCard] = useState(1);
 
     const handleCardClick = (index) => {
-        setActiveCard(activeCard === index ? null : index); // Toggle active card
+        setActiveCard(index); // Toggle active card
     };
 
     const cardData = [
@@ -32,11 +32,10 @@ export function BodyFive() {
     ];
     useEffect(() => {
         const interval = setInterval(() => {
-            setActiveCard(1); // Set active card to index 1
-        }, 3000); // Change card every 3 seconds
-
-        return () => clearInterval(interval); // Cleanup on unmount
-    }, []);
+            return setActiveCard((prev) => (prev + 1) % cardData.length)
+        }, 1000);
+        return () => clearInterval(interval)
+    }, [])
 
 
     return (
