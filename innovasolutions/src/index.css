@@ -258,8 +258,12 @@ b{
   /* background-color: red; */
 }
 
-h2{
+h2, .servicesSubHeading{
   color: rgb(39, 39, 87);
+}
+.servicesSubHeading{
+  font-weight: bold;
+
 }
 /* .sercontainer{
   width: 100%;
@@ -338,9 +342,9 @@ h2{
 
 }
 
-.card-body p {
+/* .card-body p {
   display: none; /* Hide description by default */
-}
+/* }  */
 
 .card.active .card-body p {
 
@@ -349,6 +353,6 @@ h2{
 .card.not-active{
   opacity: 0.5;
   flex-grow: 0;
-  /* width: 40%;
-  height: 100%; */
+  width: 40%;
+  height: 100%;
 }

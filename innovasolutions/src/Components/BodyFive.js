@@ -33,23 +33,23 @@ export function BodyFive() {
 
     return (
         <>
-            <h1>Services</h1>
+            <h2 style={{fontSize: ''}}>Services</h2>
             <div className="sercontainer">
 
                 {cardData.map((card, index) => (
                     <div
                         key={index}
                         className={`card ${activeCard === index ? 'active' : 'not-active'}`}
-                        ornClick={() => handleCardClick(index)}
+                        onClick={() => handleCardClick(index)}
                     >
                        <div className="card-body">
                        <img style={{ width: '100%' }} src={card.imgSrc} alt={card.title} />
                         
-                            <h2>{card.title}</h2>
-                            <p className={activeCard === index ? 'visible' : 'hidden'}>
+                            <h3 className='servicesSubHeading'>{card.title}</h3>
+                            <p style={{fontSize: '14px'}}>
                                 {card.description}
                             </p>
-                            <a href="#" style={{ border: 'none' }}>Learn More</a>
+                            <a href="#" style={{ border: 'none'}}>Learn More</a>
                         </div>
                     </div>
                 ))}
