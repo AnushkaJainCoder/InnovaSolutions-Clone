@@ -1,7 +1,7 @@
 export function BodyFour(){
     return(
         <div className="bodyFour">
-            <h2 >Our Digital-first Offerings</h2>
+            <h1 style={{color: '#212169', fontWeight: '620', fontSize: '40px', marginTop: '50px'}}>Our Digital-first Offerings</h1>
             <div className="contenContainer">
             <div className="cont">
                     <img src="https://www.innovasolutions.com/wp-content/uploads/2023/06/Early-stage-Opportunity-Assessments-Icon.svg" />

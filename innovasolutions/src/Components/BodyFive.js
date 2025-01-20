@@ -33,7 +33,7 @@ export function BodyFive() {
 
     return (
         <>
-            <h2 style={{fontSize: ''}}>Services</h2>
+            <h1 style={{color: '#212169', fontWeight: '620', fontSize: '40px', marginTop: '50px'}}>Services</h1>
             <div className="sercontainer">
 
                 {cardData.map((card, index) => (
