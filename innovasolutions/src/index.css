@@ -283,16 +283,22 @@ h2{
   width: 80%;
   height: 100%;
   display: flex;
-  gap: 0;
+  flex-wrap: wrap; /* Allow wrapping of cards */
+  /* justify-content: space-around; Space between cards */
   position: relative;
+  margin-left: 10%;
+  /* column-gap: 0px; */
    /* Make the container relative for absolute positioning */
 }
 
 .card {
   display: flex;
   flex-direction: column;
+  flex: 0 0 30%;
   /* overflow-x:; */
   flex-wrap: nowrap;
+  width: 40%;
+  height: 100%;
   /* margin-right: 10%; */
   /* align-items: center; */
   /* position: absolute;  */
@@ -300,7 +306,7 @@ h2{
   transition: transform 0.3s ease; /* Smooth transition for transform */
   cursor: pointer;
   
-  /* background-color: rgb(240, 238, 238); */
+  background-color: rgb(240, 238, 238);
 }
 
 .card img {
@@ -320,6 +326,10 @@ h2{
 .card.active {
   transform: scale(1.1); /* Scale up the active card */
   z-index: 1; /* Bring the active card to the front */
+  margin-left: -20px;
+  width: 60%;
+  height: 100%;
+
 }
 
 .card-body p {
@@ -327,8 +337,10 @@ h2{
 }
 
 .card.active .card-body p {
+
   display: block; /* Show description when card is active */
 }
 .card.not-active{
-  
+  width: 50%;
+  height: 100%;
 }

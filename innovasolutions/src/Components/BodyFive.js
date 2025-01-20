@@ -22,6 +22,11 @@ export function BodyFive() {
             title: "Cloud Services",
             description: "Leverage cloud technology to enhance your business operations and scalability.",
             imgSrc: "https://www.innovasolutions.com/wp-content/uploads/2022/08/Talent-Solutions-copy.webp"
+        },
+        {
+            title: "Cloud Services",
+            description: "Leverage cloud technology to enhance your business operations and scalability.",
+            imgSrc: "https://www.innovasolutions.com/wp-content/uploads/2022/08/Talent-Solutions-copy.webp"
         }
         
     ];
