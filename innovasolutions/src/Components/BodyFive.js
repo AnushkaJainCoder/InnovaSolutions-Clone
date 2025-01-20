@@ -35,11 +35,12 @@ export function BodyFive() {
         <>
             <h1>Services</h1>
             <div className="sercontainer">
+
                 {cardData.map((card, index) => (
                     <div
                         key={index}
                         className={`card ${activeCard === index ? 'active' : 'not-active'}`}
-                        onClick={() => handleCardClick(index)}
+                        ornClick={() => handleCardClick(index)}
                     >
                        <div className="card-body">
                        <img style={{ width: '100%' }} src={card.imgSrc} alt={card.title} />
