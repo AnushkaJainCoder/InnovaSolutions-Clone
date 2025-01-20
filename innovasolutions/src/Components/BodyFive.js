@@ -32,10 +32,11 @@ export function BodyFive() {
     ];
     useEffect(() => {
         const interval = setInterval(() => {
-            setActiveCard((prev) => (prev + 1) % cardData.length)
-        }, 1000);
-        return () => clearInterval(interval)
-    }, 3000)
+            setActiveCard(1); // Set active card to index 1
+        }, 3000); // Change card every 3 seconds
+
+        return () => clearInterval(interval); // Cleanup on unmount
+    }, []);
 
 
     return (
