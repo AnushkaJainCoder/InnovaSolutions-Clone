@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 export function BodyFive() {
     const [activeCard, setActiveCard] = useState(1);
@@ -28,12 +28,19 @@ export function BodyFive() {
         //     description: "Leverage cloud technology to enhance your business operations and scalability.",
         //     imgSrc: "https://www.innovasolutions.com/wp-content/uploads/2022/08/Talent-Solutions-copy.webp"
         // }
-        
+
     ];
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setActiveCard((prev) => (prev + 1) % cardData.length)
+        }, 1000);
+        return () => clearInterval(interval)
+    }, 3000)
+
 
     return (
         <>
-            <h1 style={{color: '#212169', fontWeight: '620', fontSize: '40px', marginTop: '50px'}}>Services</h1>
+            <h1 style={{ color: '#212169', fontWeight: '620', fontSize: '40px', marginTop: '50px' }}>Services</h1>
             <div className="sercontainer">
 
                 {cardData.map((card, index) => (
@@ -42,14 +49,14 @@ export function BodyFive() {
                         className={`card ${activeCard === index ? 'active' : 'not-active'}`}
                         onClick={() => handleCardClick(index)}
                     >
-                       <div className="card-body">
-                       <img style={{ width: '100%' }} src={card.imgSrc} alt={card.title} />
-                        
+                        <div className="card-body">
+                            <img style={{ width: '100%' }} src={card.imgSrc} alt={card.title} />
+
                             <h3 className='servicesSubHeading'>{card.title}</h3>
-                            <p style={{fontSize: '14px', paddingLeft: '30px', paddingRight: '30px', fontWeight: '500'}}>
+                            <p style={{ fontSize: '14px', paddingLeft: '30px', paddingRight: '30px', fontWeight: '500' }}>
                                 {card.description}
                             </p>
-                            <a href="#" style={{ border: 'none', color: '#212169', fontWeight: '700', textDecoration: 'none'}}>Learn More &gt;</a>
+                            <a href="#" style={{ border: 'none', color: '#212169', fontWeight: '700', textDecoration: 'none' }}>Learn More &gt;</a>
                         </div>
                     </div>
                 ))}
