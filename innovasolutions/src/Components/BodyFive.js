@@ -11,7 +11,7 @@ export function BodyFive() {
         {
             title: "Cyber Security",
             description: "Utilize the power of Innova’s cybersecurity offerings to deliver digital trust and neutralize threats effectively.",
-            imgSrc: "https://www.innovasolutions.com/wp-content/uploads/2022/08/Talent-Solutions-copy.webp"
+            imgSrc: "https://www.innovasolutions.com/wp-content/uploads/2022/08/Cyber-Security-2.webp"
         },
         {
             title: "Cloud Services",
@@ -19,8 +19,8 @@ export function BodyFive() {
             imgSrc: "https://www.innovasolutions.com/wp-content/uploads/2024/12/Cloud-services-info.jpg"
         },
         {
-            title: "Cloud Services",
-            description: "Leverage cloud technology to enhance your business operations and scalability.",
+            title: "Talent Solutions",
+            description: "Tap into our expertise to address the complex workforce needs and optimize your talent acquisition strategies.",
             imgSrc: "https://www.innovasolutions.com/wp-content/uploads/2022/08/Talent-Solutions-copy.webp"
         },
         // {
