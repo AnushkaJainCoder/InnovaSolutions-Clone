@@ -284,16 +284,19 @@ h2, .servicesSubHeading{
   color: rgb(104, 102, 102);
 } */ 
 .sercontainer {
+  /* background-color: #333; */
   margin-top: 4%;
-  width: 80%;
+  width: 70%;
   height: 90%;
   display: flex;
   flex-wrap: wrap; /* Allow wrapping of cards */
   /* justify-content: space-around; Space between cards */
   justify-content: center;
+  align-items: center;
   position: relative;
-  margin-left: 10%;
+  margin-left: 15%;
   margin-bottom: 4%;
+  /* margin: 0; */
 
   /* column-gap: 0px; */
    /* Make the container relative for absolute positioning */
@@ -304,6 +307,7 @@ h2, .servicesSubHeading{
   flex-direction: column;
   flex: 0 0 30%;
   padding-bottom: 2%;
+ 
   
   /* overflow-x:; */
   /* flex-wrap: nowrap; */
@@ -322,6 +326,7 @@ h2, .servicesSubHeading{
 }
 
 .card img {
+  height: 70%;
   transition: transform 0.3s ease; /* Smooth transition for image */
 }
 
@@ -342,8 +347,9 @@ h2, .servicesSubHeading{
   /* margin-left: -20px; */
   opacity: 1;
   flex-grow: 2;
+
   /* width: 180%; */
-  /* height: 100%; */
+  height: 80%;
 
 }
 
@@ -359,6 +365,6 @@ h2, .servicesSubHeading{
   opacity: 0.5;
   flex-grow: 0;
   width: 40%;
-  height: 100%;
+  /* height: 100%; */
 }
 

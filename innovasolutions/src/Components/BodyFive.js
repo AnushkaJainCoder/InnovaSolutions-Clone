@@ -46,7 +46,7 @@ export function BodyFive() {
                        <img style={{ width: '100%' }} src={card.imgSrc} alt={card.title} />
                         
                             <h3 className='servicesSubHeading'>{card.title}</h3>
-                            <p style={{fontSize: '14px', paddingLeft: '30px', paddingRight: '30px'}}>
+                            <p style={{fontSize: '14px', paddingLeft: '30px', paddingRight: '30px', fontWeight: '500'}}>
                                 {card.description}
                             </p>
                             <a href="#" style={{ border: 'none', color: '#212169', fontWeight: '700', textDecoration: 'none'}}>Learn More &gt;</a>
