@@ -7,6 +7,7 @@ import { BodyTwo } from './Components/BodyTwo';
 import { BodyThree } from './Components/BodyThree';
 import { BodyFour } from './Components/BodyFour';
 import { BodyFive } from './Components/BodyFive';
+import CaseStudies from './Components/BodySix';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <BodyThree />
       <BodyFour />
       <BodyFive />
+      <CaseStudies />
       
     </div>
   );
