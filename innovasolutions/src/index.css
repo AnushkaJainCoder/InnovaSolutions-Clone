@@ -282,27 +282,17 @@ h2, .servicesSubHeading{
 .card-body{
   width: 40%;
   color: rgb(104, 102, 102);
-} */ 
-.sercontainer {
+} */ .sercontainer {
   background-color: #333;
   margin-top: 4%;
   width: 70%;
   height: 90%;
   display: flex;
-  flex-wrap: wrap; /* Allow wrapping of cards */
-  /* justify-content: space-around; Space between cards */
   justify-content: center;
   align-items: center;
   position: relative;
   margin-left: 15%;
   margin-bottom: 4%;
-  /* padding-right: 30%; */
-  /* padding-right: %; */
-  
-  /* margin: 0; */
-
-  /* column-gap: 0px; */
-   /* Make the container relative for absolute positioning */
 }
 
 .card {
@@ -310,22 +300,12 @@ h2, .servicesSubHeading{
   flex-direction: column;
   flex: 0 0 30%;
   padding-bottom: 2%;
- 
-  
-  /* overflow-x:; */
-  /* flex-wrap: nowrap; */
-  /* width: 40%; */
-  /* height: 100%; */
-  /* margin-right: 10%; */
-  /* align-items: center; */
-  /* position: absolute;  */
-  /* osition cards absolutely */
-  transition: transform 0.5s ease,opacity 0.3s ease; /* Smooth transition for transform */
+  transition: transform 0.5s ease, opacity 0.3s ease; /* Smooth transition for transform */
   cursor: pointer;
   border: 0.2px solid rgb(194, 193, 193);
-  
   background-color: rgb(255, 251, 251);
   opacity: 0.5;
+  position: relative; /* Make the card position relative */
 }
 
 .card img {
@@ -338,41 +318,28 @@ h2, .servicesSubHeading{
   color: rgb(104, 102, 102);
   text-align: center;
   margin: 0;
-  /* transi */
-  
-  /* margin-right: -10%; */
-  /* margin-left: -10%; */
 }
 
 .card.active {
   transform: scale(1.1); /* Scale up the active card */
   z-index: 1; /* Bring the active card to the front */
-  /* margin-left: -20px; */
   opacity: 1;
-  flex-grow: 2;
-
-  /* width: 180%; */
-  height: 80%;
-  transform: translateX(1%);
-  transition: transform 0.5s ease-in
-
 }
 
-/* .card-body p {
-  display: none; /* Hide description by default */
-/* }  */
-
-.card.active .card-body p {
-
-  display: block; /* Show description when card is active */
-}
-.card.not-active{
+.card.not-active {
   opacity: 0.5;
-  flex-grow: 0;
-  width: 40%;
-  transform: translateX(-1%);
-  transition: transform 0.5s ease-in
-  /* transform: translateX(-100%); */
-  /* height: 100%; */
+  transform: translateX(-10%); /* Slightly shift non-active cards */
+  transition: transform 0.5s ease-in;
 }
 
+.card:not(.active) {
+  transform: translateX(10%); /* Shift non-active cards to the right */
+}
+
+.card.active + .card {
+  transform: translateX(10%); /* Shift the next card to the right */
+}
+
+.card.active ~ .card {
+  transform: translateX(20%); /* Shift subsequent cards further */
+}

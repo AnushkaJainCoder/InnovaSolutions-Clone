@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 export function BodyFive() {
     const [activeCard, setActiveCard] = useState(1);
-    const [cardOrder, setCardOrder] = useState([0,1,2]);
+    // const [cardOrder, setCardOrder] = useState([0,1,2]);
 
     const handleCardClick = (index) => {
         setActiveCard(index); // Toggle active card
@@ -34,13 +34,13 @@ export function BodyFive() {
     useEffect(() => {
         const interval = setInterval(() => {
              setActiveCard((prev) => (prev + 1) % cardData.length);
-             setCardOrder((prevOrder) => {
-                const newOrder = [...prevOrder];
-                const firstCard = newOrder.shift();
-                newOrder.push(firstCard);
-                return newOrder;
-             })
-        }, 1000);
+            //  setCardOrder((prevOrder) => {
+            //     const newOrder = [...prevOrder];
+            //     const firstCard = newOrder.shift();
+            //     newOrder.push(firstCard);
+            //     return newOrder;
+            //  })
+        }, 3000);
         return () => clearInterval(interval)
     }, [])
 
@@ -50,18 +50,18 @@ export function BodyFive() {
             <h1 style={{ color: '#212169', fontWeight: '620', fontSize: '40px', marginTop: '50px' }}>Services</h1>
             <div className="sercontainer">
 
-                {cardOrder.map((cardIndex) => (
+                {cardData.map((card, index) => (
                     <div
-                        key={cardIndex}
-                        className={`card ${activeCard === cardIndex ? 'active' : 'not-active'}`}
-                        onClick={() => handleCardClick(cardIndex)}
+                        key={index}
+                        className={`card ${activeCard === index ? 'active' : 'not-active'}`}
+                        onClick={() => handleCardClick(index)}
                     >
                         <div className="card-body">
-                            <img style={{ width: '100%' }} src={cardData[cardIndex].imgSrc} alt={cardData[cardIndex].title} />
+                            <img style={{ width: '100%' }} src={card.imgSrc} alt={card.title} />
 
-                            <h3 className='servicesSubHeading'>{cardData[cardIndex].title}</h3>
+                            <h3 className='servicesSubHeading'>{card.title}</h3>
                             <p style={{ fontSize: '14px', paddingLeft: '30px', paddingRight: '30px', fontWeight: '500' }}>
-                                {cardData[cardIndex].description}
+                                {card.description}
                             </p>
                             <a href="#" style={{ border: 'none', color: '#212169', fontWeight: '700', textDecoration: 'none' }}>Learn More &gt;</a>
                         </div>
