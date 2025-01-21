@@ -32,7 +32,7 @@ export function BodyFive() {
     ];
     useEffect(() => {
         const interval = setInterval(() => {
-            return setActiveCard((prev) => (prev + 1) % cardData.length)
+             setActiveCard((prev) => (prev + 1) % cardData.length)
         }, 1000);
         return () => clearInterval(interval)
     }, [])
