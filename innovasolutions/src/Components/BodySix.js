@@ -1,4 +1,7 @@
+import { useEffect, useState } from "react"
+
 export default function CaseStudies() {
+    const [cardOrder, setCardOrder] = useState([]);
     const cardData = [
         {
             imgSrc: 'https://www.innovasolutions.com/wp-content/uploads/2023/08/Hyundai-Automotive-cs-info.jpg',
@@ -20,6 +23,18 @@ export default function CaseStudies() {
         },
 
     ]
+    useEffect(()=>{
+        const interval = setInterval((prev)=>{
+            setCardOrder((prevOrder)=>{
+                const newOrder = [...prevOrder];
+                const firstCard = newOrder.shift;
+                newOrder.push(firstCard);
+                return newOrder;
+            })
+        },1000);
+        return () => clearInterval(interval);
+    },[]);
+
     return (
         <>
         <div className="case-study">
