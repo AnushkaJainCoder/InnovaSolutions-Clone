@@ -386,6 +386,7 @@ h2, .servicesSubHeading{
   background: #ffffff;
   padding: 0.5%;
   
+  
  
 }
 .cardBody{
@@ -393,8 +394,9 @@ h2, .servicesSubHeading{
   width: 90%;
   padding: 4%;
   /* tran */
-  transform: translateX(20%);
-  transition: transform 0.5s ease;
+  /* transform:translateX(0.4);
+  
+  transition: linear 0.5s ease; */
 
   /* display:; */
 }
