@@ -22,7 +22,8 @@ export default function CaseStudies() {
     ]
     return (
         <>
-            <h1>Case Studies</h1>
+        <div className="case-study">
+            <h1 style={{ color: '#212169', fontWeight: '620', fontSize: '40px', marginTop: '50px' }}>Case Studies</h1>
             <div className="caseStudyBody">
                 <div className="container-caseStudies">
                     {cardData.map((card, index) => (
@@ -35,6 +36,7 @@ export default function CaseStudies() {
                         </div>
                     ))}
                 </div>
+            </div>
             </div>
         </>
     )

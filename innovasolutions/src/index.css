@@ -383,11 +383,12 @@ h2, .servicesSubHeading{
   display: flex;
   flex-direction: row;
   width: 80%;
-  /* background: #f41313; */
+  background: #ffffff;
+  padding: 0.5%;
  
 }
 .cardBody{
-  background-color: #717171;
+  background-color: #f7f2f2;
   width: 90%;
   padding: 4%;
 
@@ -395,6 +396,9 @@ h2, .servicesSubHeading{
 }
 .caseStudies-img{
   width: 90%;
+}
+.case-study{
+  background-color: #f7f2f2;
 }
 
 
