@@ -374,7 +374,8 @@ h2, .servicesSubHeading{
 }
 .caseStudyBody{
   width: 100%;
-  background-color: #8282d5;
+  /* background-color: #8282d5; */
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -382,7 +383,7 @@ h2, .servicesSubHeading{
   display: flex;
   flex-direction: row;
   width: 80%;
-  background: #f41313;
+  /* background: #f41313; */
  
 }
 .cardBody{
