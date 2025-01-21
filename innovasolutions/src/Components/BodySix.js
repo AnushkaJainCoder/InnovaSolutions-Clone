@@ -29,9 +29,12 @@ export default function CaseStudies() {
                     {cardData.map((card, index) => (
                         <div key={index}>
                             <div className="cardBody">
+                                <div className="cardBodyContent">
+
                                 <img src={card.imgSrc} className="caseStudies-img" />
                                 <h4 style={{ marginTop: '11px' }}>{card.title}</h4>
-                                <p>{card.body}</p>
+                                <p style={{ marginTop: '-11px' }}>{card.body}</p>
+                            </div>
                             </div>
                         </div>
                     ))}

@@ -377,7 +377,7 @@ h2, .servicesSubHeading{
   /* background-color: #8282d5; */
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
 }
 .container-caseStudies{
   display: flex;
@@ -385,20 +385,45 @@ h2, .servicesSubHeading{
   width: 80%;
   background: #ffffff;
   padding: 0.5%;
+  
  
 }
 .cardBody{
   background-color: #f7f2f2;
   width: 90%;
   padding: 4%;
+  /* tran */
+  transform: translateX(20%);
+  transition: transform 0.5s ease;
 
   /* display:; */
 }
 .caseStudies-img{
-  width: 90%;
+  width: 98%;
 }
 .case-study{
   background-color: #f7f2f2;
+  padding-top: 1%;
+
+}
+.cardBodyContent{
+  /* width: 100%; */
+  /* background: #7a4444; */
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: left;
+  /* place-items: ; */
+}
+.cardBodyContent p{
+  color: rgb(66, 65, 65);
+  font-size: 15px;
+}
+.cardBodyContent h4{
+  color: #212169;
+  font-weight: 780;
+
 }
 
 
