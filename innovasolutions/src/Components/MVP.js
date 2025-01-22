@@ -1,4 +1,4 @@
-export function BodyThree() {
+export function MVP() {
     return (
         <div className="body-three">
             <div className="box">

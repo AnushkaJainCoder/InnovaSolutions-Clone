@@ -1,4 +1,4 @@
-export function BodyOne() {
+export function Vision() {
     return (
         <>
             <h1 style={{color: '#212169', fontWeight: '620', fontSize: '40px', marginTop: '50px'}}>

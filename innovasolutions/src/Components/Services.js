@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-export function BodyFive() {
+export function Services() {
     const [activeCard, setActiveCard] = useState(1);
     const [cardOrder, setCardOrder] = useState([0,1,2]);
 

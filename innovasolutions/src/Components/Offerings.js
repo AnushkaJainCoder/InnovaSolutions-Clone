@@ -1,4 +1,4 @@
-export function BodyFour(){
+export function Offerings(){
     return(
         <div className="bodyFour">
             <h1 style={{color: '#212169', fontWeight: '620', fontSize: '40px', marginTop: '50px'}}>Our Digital-first Offerings</h1>
