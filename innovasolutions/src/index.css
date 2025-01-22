@@ -409,9 +409,7 @@ h2, .servicesSubHeading{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 4%;
-  padding-right: 4%;
-  padding-top: 4%;
+  padding: 4%;
   
   box-sizing: border-box;
   /* overflow: hidden; */
@@ -452,14 +450,19 @@ h2, .servicesSubHeading{
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
   text-align: left;
   height: 80%;
   /* border: 1px solid white; */
   /* place-items: ; */
 }
-.cardBodyContent p{
-  color: rgb(66, 65, 65);
+
+.cardBodyContent button{
+   background: rgb(215, 215, 6)
+}
+
+  .cardBodyContent p{
+    color: rgb(66, 65, 65);
   font-size: 15px;
 }
 .cardBodyContent h4{
