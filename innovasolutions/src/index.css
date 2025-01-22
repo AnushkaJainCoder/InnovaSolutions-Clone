@@ -289,17 +289,17 @@ h2, .servicesSubHeading{
 .sercontainer {
   /* background-color: #333; */
   /* margin-top: 4%; */
-  width: 70%;
-  height: 90%;
+  width: 80%;
+  height: 100%;
   display: flex;
   flex-wrap: wrap; /* Allow wrapping of cards */
   /* justify-content: space-around; Space between cards */
   justify-content: center;
   align-items: center;
   position: relative;
-  margin-left: 15%;
-  margin-bottom: 4%;
-  /* padding-right: 30%; */
+  margin: 0 auto;
+  padding-bottom: 6%;
+  padding-top: 1%;
   /* padding-right: %; */
   
   /* margin: 0; */
@@ -313,6 +313,7 @@ h2, .servicesSubHeading{
   flex-direction: column;
   flex: 0 0 30%;
   padding-bottom: 2%;
+  /* height: 30%; */
   /* overflow-x:; */
   /* flex-wrap: nowrap; */
   /* width: 40%; */
@@ -327,6 +328,7 @@ h2, .servicesSubHeading{
   
   background-color: rgb(255, 251, 251);
   opacity: 0.5;
+  /* flex-grow: 0; */
 }
 
 .card img {
@@ -336,7 +338,7 @@ h2, .servicesSubHeading{
 
 .card-body {
   width: 100%;
-  color: rgb(104, 102, 102);
+  color: rgb(101, 100, 100);
   text-align: center;
   margin: 0;
   /* transi */
@@ -350,12 +352,13 @@ h2, .servicesSubHeading{
   z-index: 1; /* Bring the active card to the front */
   /* margin-left: -20px; */
   opacity: 1;
-  flex-grow: 2;
+  /* flex-grow: 5%; */
 
   /* width: 180%; */
-  height: 80%;
-  transform: translateX(-1%);
-  transition: transform 0.5s ease-in-out
+  
+  /* transform: translateX(-1%);
+  transition: transform 0.5s ease-in-out; */
+  /* height: 190%; */
 
 }
 
@@ -370,7 +373,7 @@ h2, .servicesSubHeading{
 .card.not-active{
   opacity: 0.5;
   flex-grow: 0;
-  width: 40%;
+  /* width: 40%; */
  
   /* transform: translateX(-100%); */
   /* height: 100%; */
@@ -390,6 +393,9 @@ h2, .servicesSubHeading{
   width: 80%;
   background: #ffffff;
   padding: 0.5%;
+  margin: 0 auto;
+  /* display: flex;
+  justify-content: center; */
   /* transition: transform 0.5s ease; */
   /* flex: 0 0 30%; */
   
@@ -399,7 +405,14 @@ h2, .servicesSubHeading{
 .cardBody{
   background-color: #f7f2f2;
   width: 80%;
-  padding: 4%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-top: 4%;
+  
   box-sizing: border-box;
   /* overflow: hidden; */
   /* position: ABSO; */
@@ -414,16 +427,19 @@ h2, .servicesSubHeading{
   width: 100%;
   height: auto;
 }
+.caseStudies-img:hover{
+  opacity: 0.6;
+}
 .case-study{
 
   margin:0;
   /* padding: 0; */
-  background-color: #b64a4a;
+  background-color: #f6f4f4;
   padding: 1%;
   /* display: flex;
   flex-direction: column; */
   justify-content: center;
-  
+
   align-items: center;
  
   /* margin: 0; */
@@ -438,6 +454,7 @@ h2, .servicesSubHeading{
   flex-direction: column;
   justify-content: flex-end;
   text-align: left;
+  height: 80%;
   /* border: 1px solid white; */
   /* place-items: ; */
 }
