@@ -1,4 +1,4 @@
-
+@t
 
 body {
   margin: 0;
@@ -398,7 +398,7 @@ h2, .servicesSubHeading{
   width: 90%;
   padding: 4%;
   /* box-sizing: border-box; */
-  /* overflow: hidden; */
+  overflow: hidden;
   /* position: ABSO; */
   /* tran */
   /* transform:translateX(0.4); */

@@ -23,7 +23,12 @@ export default function CaseStudies() {
 
     useEffect(() => {
         const interval = setInterval(() => {
+            console.log(currentIndex);
+            console.log("ef");
+            
             setCurrentIndex((prev) => (prev + 1) % cardData.length);
+           
+            
             // setCardOrder((prevOrder) => {
             //     const newOrder = [...prevOrder];
             //     const firstCard = newOrder.shift();
@@ -40,7 +45,7 @@ export default function CaseStudies() {
             // });
         }, 3000);
         return () => clearInterval(interval);
-    }, []);
+    }, [currentIndex]);
 
     return (
         <>
@@ -50,7 +55,7 @@ export default function CaseStudies() {
                     <div className="container-caseStudies" >
 
                         {cardData.map((card, index) => (
-                            <div key={index} className="cardBody" style={{ transform: `translateX(-${currentIndex * (100 / cardData.length)}%)`, transition: 'transform 0.5s ease' }}>
+                            <div key={index} className="cardBody" style={{ transform: `translateX(-${currentIndex * (300 / cardData.length)}%)`, transition: 'transform 0.5s ease' }}>
                                 <div className="cardBodyContent">
                                     <img src={card.imgSrc} className="caseStudies-img" alt={card.title} />
                                     <h4 style={{ marginTop: '11px' }}>{card.title}</h4>
