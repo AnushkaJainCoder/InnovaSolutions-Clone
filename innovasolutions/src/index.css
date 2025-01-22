@@ -377,6 +377,7 @@ h2, .servicesSubHeading{
   /* background-color: #8282d5; */
   display: flex;
   justify-content: center;
+  overflow: hidden;
   /* align-items: center; */
 }
 .container-caseStudies{
@@ -386,6 +387,7 @@ h2, .servicesSubHeading{
   width: 80%;
   background: #ffffff;
   padding: 0.5%;
+  transition: transform 0.5s ease;
   /* flex: 0 0 30%; */
   
   
@@ -395,7 +397,9 @@ h2, .servicesSubHeading{
   background-color: #f7f2f2;
   width: 90%;
   padding: 4%;
-  overflow: hidden;
+  /* box-sizing: border-box; */
+  /* overflow: hidden; */
+  /* position: ABSO; */
   /* tran */
   /* transform:translateX(0.4); */
   
@@ -409,6 +413,7 @@ h2, .servicesSubHeading{
 .case-study{
   background-color: #f7f2f2;
   padding-top: 1%;
+  /* position: relative; */
 
 }
 .cardBodyContent{

@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 
 export default function CaseStudies() {
-    const [cardOrder, setCardOrder] = useState([0, 1, 2]);
+    // const [cardOrder, setCardOrder] = useState([0, 1, 2]);
+    const [currentIndex, setCurrentIndex] = useState(0);
     const cardData = [
         {
             imgSrc: 'https://www.innovasolutions.com/wp-content/uploads/2023/08/Change-Healthcare-cs-info.jpg',
@@ -22,18 +23,21 @@ export default function CaseStudies() {
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setCardOrder((prevOrder) => {
-                const newOrder = [...prevOrder];
-                const firstCard = newOrder.shift();
-                newOrder.push(firstCard);
-                // if()
-                for( let i in newOrder) {
-                    if(i===2){
-                        i=0;
-                    }
-                }
-                return newOrder;
-            });
+            setCurrentIndex((prev) => (prev + 1) % cardData.length);
+            // setCardOrder((prevOrder) => {
+            //     const newOrder = [...prevOrder];
+            //     const firstCard = newOrder.shift();
+            //     newOrder.push(firstCard);
+            //     // if()
+            //     for( let i in newOrder) {
+            //         if(i===2){
+            //             i=0;
+            //         }
+            //     }
+            //     console.log(newOrder);
+
+            //     return newOrder;
+            // });
         }, 3000);
         return () => clearInterval(interval);
     }, []);
@@ -44,12 +48,13 @@ export default function CaseStudies() {
                 <h1 style={{ color: '#212169', fontWeight: '620', fontSize: '40px', marginTop: '50px' }}>Case Studies</h1>
                 <div className="caseStudyBody">
                     <div className="container-caseStudies" >
-                        {cardOrder.map((index) => (
-                            <div key={index} className="cardBody"style={{ transform: `translateX(-${cardOrder[0] * (100 / cardOrder.length)}%)`, transition: 'transform 0.5s ease' }}> 
+
+                        {cardData.map((card, index) => (
+                            <div key={index} className="cardBody" style={{ transform: `translateX(-${currentIndex * (100 / cardData.length)}%)`, transition: 'transform 0.5s ease' }}>
                                 <div className="cardBodyContent">
-                                    <img src={cardData[index].imgSrc} className="caseStudies-img" alt={cardData[index].title} />
-                                    <h4 style={{ marginTop: '11px' }}>{cardData[index].title}</h4>
-                                    <p style={{ marginTop: '-11px' }}>{cardData[index].body}</p>
+                                    <img src={card.imgSrc} className="caseStudies-img" alt={card.title} />
+                                    <h4 style={{ marginTop: '11px' }}>{card.title}</h4>
+                                    <p style={{ marginTop: '-11px' }}>{card.body}</p>
                                 </div>
                             </div>
                         ))}
