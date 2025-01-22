@@ -382,9 +382,11 @@ h2, .servicesSubHeading{
 .container-caseStudies{
   display: flex;
   flex-direction: row;
+  gap: 3%;
   width: 80%;
   background: #ffffff;
   padding: 0.5%;
+  /* flex: 0 0 30%; */
   
   
  
@@ -429,4 +431,6 @@ h2, .servicesSubHeading{
 
 }
 
-
+.movingCards{
+  overflow: hidden;
+}
