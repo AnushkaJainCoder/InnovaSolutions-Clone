@@ -114,6 +114,10 @@ export default function CaseStudies() {
                     </div>
                 </div>
             </div>
+            <div style={{height: '200px', margin: '0 auto'}}>
+            <button style={{ color: '#212169', fontSize: '14px', margin: '0 ', width: 'fit-content'}}>Click here to know more about our services / solutions</button>
+       
+            </div>
         </>
     );
 }
