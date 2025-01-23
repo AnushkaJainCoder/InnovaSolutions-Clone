@@ -104,7 +104,7 @@ export default function CaseStudies() {
                                             <p></p>
                                         </div> */}
                                         <p style={{ marginTop: '-11px' }}><b>Technologies:</b> {card.technology}</p>
-                                        <button style={{ color: '#212169', fontSize: '14px', margin: '0 ', width: 'fit-content'}}>Download the Case Study to Know More  &gt;</button>
+                                        <button style={{ }}>Download the Case Study to Know More  &gt;</button>
                                     </div>
                                 </div>
                             ))}
@@ -114,8 +114,8 @@ export default function CaseStudies() {
                     </div>
                 </div>
             </div>
-            <div style={{height: '200px', margin: '0 auto'}}>
-            <button style={{ color: '#212169', fontSize: '14px', margin: '0 ', width: 'fit-content'}}>Click here to know more about our services / solutions</button>
+            <div  style={{margin: '80px auto', textAlign: 'çenter'}}>
+            <button className="exp-more" style={{fontSize: '19px', margin: '0 ', width: 'fit-content'}}>Click here to know more about our services / solutions  &gt;</button>
        
             </div>
         </>
