@@ -1,12 +1,14 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+// import '././index.css';
 
 
 export default function CaseStudies() {
     // const [cardOrder, setCardOrder] = useState([0, 1, 2]);
     const [currentIndex, setCurrentIndex] = useState(0);
+    const sliderRef = useRef(null);
     const cardData = [
         {
             imgSrc: 'https://www.innovasolutions.com/wp-content/uploads/2023/08/Change-Healthcare-cs-info.jpg',
@@ -43,10 +45,22 @@ export default function CaseStudies() {
     const settings = {
         dots: true,
         infinite: true,
-        speed: 500,
+        speed: 1200,
+        // autoplay: true,
         slidesToShow: 3,
         slidesToScroll: 1,
+        arrows: true
+        // autoplaySpeed: 2000
     }
+    useEffect(()=>{
+        const interval = setInterval(() => {
+            if(sliderRef.current){
+                sliderRef.current.slickNext();
+            }
+        }, 1000);
+        return () => clearInterval(interval)
+        
+    },[]);
     // useEffect(() => {
     //     const interval = setInterval(() => {
     //         console.log(currentIndex);
@@ -79,7 +93,7 @@ export default function CaseStudies() {
                 <h1 style={{ color: '#212169', fontWeight: '620', fontSize: '40px', marginTop: '50px' }}>Case Studies</h1>
                 <div className="caseStudyBody">
                     <div className="container-caseStudies" >
-                        <Slider {...settings}>
+                        <Slider ref={sliderRef} {...settings}>
                             {cardData.map((card, index) => (
                                 <div key={index} className="cardBody" >
                                     <div className="cardBodyContent">
